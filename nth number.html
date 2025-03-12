@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth number</title>
+    <style>
+        h1{background-color: black; color: aqua; border: 5px solid green;text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Nth Nubver</h1>
+
+    <script>
+        // Task 6: User se ek number lo (n), aur 1 se n tak print karo.
+
+let n = prompt("Enter a number")
+for(let i = 1; i <= n; i++){
+    document.write(i + "<br>")
+}
+document.write("<br>")
+document.write( "Nth reverse <br>")
+
+// Task 7: User se ek number lo (n), aur n se 1 tak reverse print karo.
+
+let n2 = prompt("Enter a number")
+for(let i = 1; i >= n2; i--){
+    document.write(i + "<br>")    
+}
+document.write("<br>")
+document.write( "Square <br>")
+// Task 8: 1 se 10 tak squares print karo (1, 4, 9, 16... 100)
+for(let i = 1; i <= 10; i++){
+    document.write(i * i + "<br>")
+}
+document.write("<br>")
+document.write( "Cube <br>")
+// Task 9: 1 se 10 tak cubes print karo (1, 8, 27, 64... 1000)
+
+for(let i = 1; i <= 10; i++){
+    document.write(i * i * i + "<br>")
+} 
+document.write("<br>")
+document.write( "Array ka sub elements <br>")
+// Task 10: Ek array ke sab elements print karo
+
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+for(let i = 0; i < arr.length; i++){
+    document.write(arr[i] + "<br>") 
+}
+
+    </script>
+</body>
+</html>
