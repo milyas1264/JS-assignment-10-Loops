@@ -7,10 +7,13 @@
     <title>Nth number</title>
     <style>
         h1{background-color: black; color: aqua; border: 5px solid green;text-align: center;}
+        button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
     </style>
 </head>
 <body>
     <h1>Nth Nubver</h1>
+    <button><a href="index.html">Back to Home</a></button>
+    <br>
 
     <script>
         // Task 6: User se ek number lo (n), aur 1 se n tak print karo.
@@ -25,7 +28,7 @@ document.write( "Nth reverse <br>")
 // Task 7: User se ek number lo (n), aur n se 1 tak reverse print karo.
 
 let n2 = prompt("Enter a number")
-for(let i = 1; i >= n2; i--){
+for(let i = n2; i >= 1; i--){
     document.write(i + "<br>")    
 }
 document.write("<br>")
