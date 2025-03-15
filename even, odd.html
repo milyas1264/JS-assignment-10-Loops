@@ -15,11 +15,11 @@
    <button><a href="index.html">Back to Home</a></button>
     <br>
    <script>
-//         n ka table print karo.
+        // n ka table print karo.
 // let n = prompt("Enter a number")
 // for(let i = 1; i <= 10; i++){
-//     document.write(i+ " x " + n + " = " + n * i + "<br>")
-   
+    // document.write(i+ " x " + n + " = " + n * i + "<br>")
+    // document.write(`${i} x ${n} = ${n * i} <br>`)
 // }
 // document.write("<br>")
 // document.write(" While loop<br>")
@@ -52,7 +52,7 @@
     let size = 0;
     for(let i of str){
         // document.write(i + "<br>")
-        console.log("charactor = ",  i);
+        console.log("character = ",  i);
         size++;
         
     }
@@ -77,8 +77,11 @@
     even =[];
     odd.push(1,3,5,7,9);
     even.push(2,4,6,8,10);
-    console.log("even = ",  even);
-    console.log("Odd = ",  odd);
+    console.log("Odd by push = ",  odd);
+    console.log("even by push = ",  even);
+    //odd and even number print by loop
+    odd = [];
+    even =[];
     for(let i of arr2){
         if(i % 2 == 0){
             even.push(i);
@@ -89,7 +92,21 @@
     console.log("Odd by loop = ",  odd);
     console.log("even by loop = ",  even);
    
-
+    //average of marks array;
+    let marks = [50,60,70,80,90,100];   
+    let sum = [50+60+70+80+90+100]; 
+    marks.length;
+    let avg = sum / marks.length;
+    console.log("Sum of marks = ",  sum);   
+    console.log("Average of marks = ",  avg);
+    //or
+    let sum2 = 0;
+    for(let i of marks){
+        sum2 += i;
+    }
+    let avg2 = sum2 / marks.length;
+    console.log("Sum of marks = ",  sum2);   
+    console.log("Average of marks = ",  avg2);
 
    </script> 
 </body>
