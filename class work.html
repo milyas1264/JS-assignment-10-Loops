@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Work</title>
+    <style>
+        h1, h2{background-color: black; color: aqua; border: 5px solid green;text-align: center;border-radius: 5px solid green;}
+        button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>Class work  </h1>
+    <button><a href="index.html">Back to Home</a></button>
+    <br>
+
+    <script>
+        // Task 1: Print Even Numbers in an Array
+        // Task: Given an array of integers, print only the even numbers.
+
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        even =[];
+        for(let i = 0; i < arr.length; i++){
+            if(arr[i] % 2 == 0){
+                even.push(arr[i]);
+            }
+        }
+        document.write("Even numbers are: " + even + "<br>");
+
+//         Task 2: Count Even and Odd Numbers
+// Task: Given an array of integers, count how many numbers are even and how many are odd.
+
+ let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let evenCount = 0;  // 2, 4, 6, 8, 10
+    let oddCount = 0;   // 1, 3, 5, 7, 9
+    for(let i = 0; i < arr2.length; i++){
+        if(arr2[i] % 2 == 0){
+            evenCount++;
+        }else{
+            oddCount++;
+        }
+    }       
+    document.write("Even numbers are: " + evenCount + "<br>");
+    document.write("Odd numbers are: " + oddCount + "<br>");
+
+    // Task 3: Sum of Even Numbers
+    // Task: Find the sum of all even numbers in the array.
+
+    let arr3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let sum = 0;
+    for(let i = 0; i < arr3.length; i++){
+        if(arr3[i] % 2 == 0){
+            sum += arr3[i];
+        }
+    }
+    document.write("Sum of even numbers is: " + sum + "<br>");
+
+//     Task 4: Find the Maximum and Minimum Numbers
+// Task: Find the largest and smallest number in the array.
+
+   let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   let result = findMaxMin(arr4);
+//   document.write(`Maximum: ${result.Max}, Minimum: ${result.Min}`); 
+
+   let max = arr4[0];
+   let min = arr4[0];
+   for(let i = 1; i < arr4.length; i++){
+       if(arr4[i] > max){
+           max = arr4[i];
+       }
+       if(arr4[i] < min){
+           min = arr4[i];
+       }
+   } 
+   document.write("Maximum number is: " + max + "<br>");
+   document.write("Minimum number is: " + min + "<br>");
+   
+   
+  
+//    Task 5: Reverse the Array
+//    Task: Reverse the elements of an array without using built-in reverse functions.
+
+   let arr5 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+   let reversed = [];
+   for(let i = arr5.length - 1; i >= 0; i--){
+       reversed.push(arr5[i]);
+   }
+   document.write("Reversed array is: " + reversed + "<br>");
+       
+//    Task 6: Check if a Number Exists in the Array
+// Task: Given a number, check if it exists in the array and print a message indicating whether
+// it’s found or not.
+ 
+   let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+   let number = 5;
+   let found = false;
+   for(let i = 0; i < arr6.length; i++){
+       if(arr6[i] == number){
+           found = true;
+           break;
+       }
+   }
+   if(found){
+       document.write("Number " + number + " is found in the array.<br>");
+   }else{
+       document.write("Number " + number + " is not found in the array.<br>");
+   }
+
+//    Task 7: Remove All Negative Numbers
+// Task: Given an array that contains both positive and negative numbers, remove all negative
+// numbers from the array.
+
+ let arr7 = [1, 2, 3, 4, 5, -6, 7, -8, 9, -10];
+ let positive = [];
+ for(let i = 0; i < arr7.length; i++){
+     if(arr7[i] >= 0){
+         positive.push(arr7[i]);
+     }
+ }
+ document.write("Positive numbers are: " + positive + "<br>");
+
+//  Task 8: Student Attendance
+// Task: Ek array mein students ki attendance ko track karo (1 for present, 0 for absent). Count
+// karo kitne students present hain aur kitne absent hain.
+
+ let arr8 = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0];
+ let presentCount = 0;
+ let absentCount = 0;
+ for(let i = 0; i < arr8.length; i++){
+     if(arr8[i] == 1){
+         presentCount++;
+     }else{
+         absentCount++;
+     }
+ }
+ document.write("Present students are: " + presentCount + "<br>");
+ document.write("Absent students are: " + absentCount + "<br>");
+
+    </script>
+</body>
+</html>
