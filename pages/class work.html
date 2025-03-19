@@ -74,7 +74,7 @@
            min = arr4[i];
        }
    } 
-   document.write("4) Maximum number is: " + max + "<br>");
+   document.write("4) Maximum number is: " , max , "<br>");
    document.write("4b) Minimum number is: " + min + "<br>");
    document.write("<br><hr>")
    
@@ -97,7 +97,7 @@
  
    let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
    let number = 7;
-   let found = true;
+   let found = false;
    for(let i = 0; i < arr6.length; i++){
        if(arr6[i] == number){
            found = true;
@@ -117,12 +117,18 @@
 
  let arr7 = [1, 2, 3, 4, 5, -6, 7, -8, 9, -10];
  let positive = [];
+ let negative = [];
  for(let i = 0; i < arr7.length; i++){
      if(arr7[i] >= 0){
          positive.push(arr7[i]);
      }
+     if (arr7[i] < 0){
+        negative.push(arr7[i])
+     }
  }
+ 
  document.write("7) Positive numbers are: " + positive + "<br>");
+ document.write("7b) Negative numbers are: " + negative + "<br>");
  document.write("<br><hr>")
 
 //  Task 8: Student Attendance
@@ -141,6 +147,7 @@
  }
  document.write("8) Present students are: " + presentCount + "<br>");
  document.write("8b) Absent students are: " + absentCount + "<br><hr>");
+ document.write("<============= Task is Completed:==============>*************** M Ilyas # 343474************** " + "<br><hr>");
  
 
     </script>
