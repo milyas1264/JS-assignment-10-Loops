@@ -7,12 +7,14 @@
     <style>
         h1, h2{background-color: black; color: aqua; border: 5px solid green;text-align: center;border-radius: 5px solid green;}
         button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
+        hr{border: 3px inset lightgreen;}
+        
     </style>
 </head>
 <body>
     <h1>Class work  </h1>
     <button><a href="../index.html">Back to Home</a></button>
-    <br>
+    <br><hr>
 
     <script>
         // Task 1: Print Even Numbers in an Array
@@ -25,8 +27,8 @@
                 even.push(arr[i]);
             }
         }
-        document.write("Even numbers are: " + even + "<br>");
-
+        document.write("1) Even numbers are: " + even + "<br>");
+        document.write("<br><hr>")
 //         Task 2: Count Even and Odd Numbers
 // Task: Given an array of integers, count how many numbers are even and how many are odd.
 
@@ -40,8 +42,9 @@
             oddCount++;
         }
     }       
-    document.write("Even numbers are: " + evenCount + "<br>");
-    document.write("Odd numbers are: " + oddCount + "<br>");
+    document.write("2) Even numbers are: " + evenCount + "<br>");
+    document.write("2b) Odd numbers are: " + oddCount + "<br><hr>");
+    document.write("<br>")
 
     // Task 3: Sum of Even Numbers
     // Task: Find the sum of all even numbers in the array.
@@ -53,14 +56,13 @@
             sum += arr3[i];
         }
     }
-    document.write("Sum of even numbers is: " + sum + "<br>");
+    document.write("3) Sum of even numbers is: " + sum + "<br>");
+    document.write("<br><hr>")
 
 //     Task 4: Find the Maximum and Minimum Numbers
 // Task: Find the largest and smallest number in the array.
 
-   let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-//   let result = findMaxMin(arr4);
-//   document.write(`Maximum: ${result.Max}, Minimum: ${result.Min}`); 
+   let arr4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]; 
 
    let max = arr4[0];
    let min = arr4[0];
@@ -72,8 +74,9 @@
            min = arr4[i];
        }
    } 
-   document.write("Maximum number is: " + max + "<br>");
-   document.write("Minimum number is: " + min + "<br>");
+   document.write("4) Maximum number is: " + max + "<br>");
+   document.write("4b) Minimum number is: " + min + "<br>");
+   document.write("<br><hr>")
    
    
   
@@ -85,15 +88,16 @@
    for(let i = arr5.length - 1; i >= 0; i--){
        reversed.push(arr5[i]);
    }
-   document.write("Reversed array is: " + reversed + "<br>");
+   document.write("5) Reversed array is: " + reversed + "<br>");
+   document.write("<br><hr>")
        
 //    Task 6: Check if a Number Exists in the Array
 // Task: Given a number, check if it exists in the array and print a message indicating whether
 // it’s found or not.
  
    let arr6 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-   let number = 5;
-   let found = false;
+   let number = 7;
+   let found = true;
    for(let i = 0; i < arr6.length; i++){
        if(arr6[i] == number){
            found = true;
@@ -101,9 +105,10 @@
        }
    }
    if(found){
-       document.write("Number " + number + " is found in the array.<br>");
+       document.write("6) Number " + number + " is found in the array.<br>");
+       document.write("<br><hr>")
    }else{
-       document.write("Number " + number + " is not found in the array.<br>");
+       document.write("6b) Number " + number + " is not found in the array.<br>");
    }
 
 //    Task 7: Remove All Negative Numbers
@@ -117,7 +122,8 @@
          positive.push(arr7[i]);
      }
  }
- document.write("Positive numbers are: " + positive + "<br>");
+ document.write("7) Positive numbers are: " + positive + "<br>");
+ document.write("<br><hr>")
 
 //  Task 8: Student Attendance
 // Task: Ek array mein students ki attendance ko track karo (1 for present, 0 for absent). Count
@@ -133,8 +139,9 @@
          absentCount++;
      }
  }
- document.write("Present students are: " + presentCount + "<br>");
- document.write("Absent students are: " + absentCount + "<br>");
+ document.write("8) Present students are: " + presentCount + "<br>");
+ document.write("8b) Absent students are: " + absentCount + "<br><hr>");
+ 
 
     </script>
 </body>
