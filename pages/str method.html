@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> str method</title>
+    <style>
+        h1, h2{background-color: black; color: aqua; border: 5px solid green;text-align: center;border-radius: 5px solid green;}
+        button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
+        hr{border: 3px inset lightgreen;}
+        
+    </style>
+</head>
+<body>
+    <h1>chapter 20 to 25</h1>
+    <button><a href="../index.html">Back to Home</a></button>
+    <br><hr>
+    <script>
+        //chapter 20
+        var str = "Hello World!";
+        var res = str.toUpperCase();
+        document.write("Upper case =" +res);
+        document.write("<br>");
+        
+        var str = "Hello World!";
+        var res = str.toLowerCase();
+        document.write("Lower case = " + res);
+        document.write("<br>");
+        //chapter 21
+        var str = "Hello World!";
+        var res = str.charAt(8);
+        document.write("Character at 8 = " + res);
+        document.write("<br>");
+
+        var str = "Hello World!";
+        var res = str.charCodeAt(8);
+        document.write(res);
+        document.write("<br>");
+        
+        var str = "Hello World!";    
+        var res = str.indexOf("Hello");
+        document.write("Index of Hello = "+res);
+        document.write("<br>");
+
+        var str = "Hello World!";
+        var res = str.lastIndexOf("");
+        document.write("Last index of World = "+ res);
+        document.write("<br>");
+        //chapter 22
+        var str = "Hello World!";
+        var res = str.search("ld");
+        document.write("Search of World = "+ res);
+        document.write("<br>");
+
+        var str = "Hello World!";
+        var res = str.slice(0,11);        
+        document.write("Slice of Hello = "+ res);
+        document.write("<br>");
+        
+        var str = "Hello World!";
+        var res = str.split(" ");
+        document.write("Split of Hello = "+ res); 
+        document.write("<br>");
+        //chapter 23
+        var str = "Hello World!";
+        var res = str.substr(0,9);        
+        document.write("Substr of World = "+ res);
+        document.write("<br>");
+        
+        var str = "Hello World!";    
+        var res = str.replace("World", "Ilyas");
+        document.write("Replace of World = "+ res);
+        document.write("<br>");
+        //chapter 24
+        var str = "Hello World!";    
+        var res = str.concat("Ilyas");
+        document.write("Concat of World = "+ res);
+        document.write("<br>"); 
+         //chapter 25
+        var str = "  Hello World!   ";
+        var res = str.trim();
+        document.write("Trim of World = "+ res);
+        document.write("<br>");
+       
+          
+        
+    </script>
+</body>
+</html>

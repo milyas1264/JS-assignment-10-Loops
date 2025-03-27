@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loop</title>
+    <style>
+        h1, h2{background-color: black; color: aqua; border: 5px solid green;text-align: center;border-radius: 5px solid green;}
+        button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
+        hr{border: 3px inset lightgreen;}
+        
+    </style>
+</head>
+<body>
+    <h1>Pattern using Nested Loop  </h1>
+    <button><a href="../index.html">Back to Home</a></button>
+    <br><hr>
+
+    <script>
+        //Nested Loop
+        // for(let i = 1; i <= 5; i++){
+        //     for(let j = 1; j <= i; j++){
+        //         document.write(`${i} x ${j} = ${j*i} <br/>`)
+        //     }
+        //     document.write("<br>")
+        // }
+      //Star pattern
+        for(let i = 1; i <= 5; i++){
+            for(let j = 1; j <= i; j++){
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        //star reverse
+        document.write("<br>")
+        for(let i = 5; i >= 1; i--){
+            for(let j = 1; j <= i; j++){
+                document.write("* ")
+            }
+            document.write("<br>")
+        }
+        //star  right to left 
+        document.write("<br>")
+        let i, j, k;
+        for(let i = 1; i<=5; i++){
+
+            for(let k = 1; k<=5-i; k++){
+                document.write(" &nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("* ")
+            }
+            
+            document.write("<br>")
+        }
+
+        //half and half star pattern
+        document.write("<br>")
+        for(let i = 1; i <= 5; i++){
+            for(let k = 1; k <= 5 - i; k++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("*")
+            }
+            for(let l = 2; l <= i; l++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        //+2 +2 star pattern
+        document.write("<br>")
+        for(let i = 1; i <= 10; i++){
+            for(let k = 1; k <= 10 - i; k++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("*")
+            }
+            for(let l = 2; l <= i; l++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        //reverse +2 +2 star pattern`
+        // document.write("<br>")
+        for(let i = 10; i >= 1; i--){
+            for(let k = 1; k <= 10 - i; k++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("*")
+            }
+            for(let l = 2; l <= i; l++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+        //upper and lower star pattern;
+        for(let i = 10; i >= 1; i--){
+            for(let k = 1; k <= 10 - i; k++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("*")
+            }
+            for(let l = 2; l <= i; l++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+          //lower
+        document.write("<br>")
+        for(let i = 1; i <= 10; i++){
+            for(let k = 1; k <= 10 - i; k++){
+                document.write("&nbsp;&nbsp;")
+            }
+            for(let j = 1; j <= i; j++){
+                document.write("*")
+            }
+            for(let l = 2; l <= i; l++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

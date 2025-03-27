@@ -70,7 +70,7 @@
        if(arr4[i] > max){
            max = arr4[i];
        }
-       if(arr4[i] < min){
+       else if(arr4[i] < min){
            min = arr4[i];
        }
    } 
@@ -104,6 +104,7 @@
            break;
        }
    }
+   
    if(found){
        document.write("6) Number " + number + " is found in the array.<br>");
        document.write("<br><hr>")
