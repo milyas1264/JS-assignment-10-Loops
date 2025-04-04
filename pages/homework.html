@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1, h2{background-color: black; color: aqua; border: 5px solid green;text-align: center;border-radius: 5px solid green;}
+        button {background-color: skyblue; color: aqua; border: 5px solid green;text-align: center;}
+        hr{border: 3px inset lightgreen;}
+        
+    </style>
+</head>
+<body>
+    <h1>Home work </h1>
+    <button><a href="../index.html">Back to Home</a></button>
+    <br><hr>
+    
+    <h3 onclick="this.style.color= 'blue';">Turn this text to blue on click</h3>
+    <p id="pass"></p>
+    <p id="paw"></p>
+    <p id="func"></p>
+    <p id="constr"></p>
+    
+    
+    
+
+    <script>
+
+const today = new Date();
+const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+const day = today.getDate();
+const dayName = dayNames[today.getDay()]; // ہفتے کا دن
+const monthName = monthNames[today.getMonth()]; // مہینے کا نام
+const month = today.getMonth() + 1; // مہینہ 0 سے شروع ہوتا ہے، اس لئے 1 جمع کریں
+const year = today.getFullYear();
+const hours = today.getHours();
+const minutes = today.getMinutes();
+const seconds = today.getSeconds(); 
+const milliseconds = today.getMilliseconds();
+const timezoneOffset = today.getTimezoneOffset(); // منفی یا مثبت GMT آفسیٹ
+
+
+const formattedDate = `Date:${dayName}${day}/${monthName}${month}/${year}<br>Time:${hours}:${minutes}:${seconds}:${milliseconds}:time zone:${timezoneOffset}`;
+console.log(formattedDate); // مثال: 27-3-2025
+document.write(formattedDate);
+var currentDate = new Date();
+
+document.write("<br>")
+function greetUser(name) {
+    
+    document.write("Welcome to my website!" + name + "!");
+}           
+greetUser("Lallu");
+document.write("<br>")
+
+function calcSum(num1, num2){
+    return num1 + num2;
+    // var sum = num1 + num2;
+    // return sum;
+}
+calcSum(5, 10);
+var result = calcSum(5, 10);
+document.write("The sum is: " + result);
+document.write("<br>")
+
+document.write("The sum is = " + calcSum(5, 10));
+
+document.write("<br>")
+ function checkresult(marks){
+    if(marks >= 50){
+        return "Bohot Khob tum ne to exame pass krlia ha Lullu.";
+    }else{
+        return "Bhai aur mahnat kro number to dekho.="+marks;
+    }
+ }
+
+ var result = checkresult(70);
+ document.write(result);
+ document.write("<br>")
+
+
+
+ function factorial(n){
+    var fact = 1;
+    for(var i = 1; i <= n; i++){
+        fact = fact * i;
+    }
+    return fact;
+ }
+ var result = factorial(5);
+ document.write("The factorial of 5 is: " + result);
+ document.write("<br>")
+
+    document.write(Math.random()/11 ); //ab ye 0 se 10 tak ka random number de rha hai
+    document.write("<br>")
+    document.write(Math.ceil(3.6)); 
+    document.write("<br>")
+    document.write(Math.floor(3.6));
+    document.write("<br>")
+    document.write(Math.round(3.6));
+    document.write("<br>")
+    document.write(Math.round(3.4));
+    document.write("<br>")
+    document.write(Math.round(3.5));
+    document.write("<br>")
+    document.write(Math.max(1, 2, 3, 4, 5));
+    document.write("<br>")
+    document.write(Math.min(1, 2, 3, 4, 5));    
+   
+    document.getElementById("pass").innerHTML=typeof [1, 2, 3];
+    document.getElementById("paw").innerHTML=typeof NaN;
+    document.getElementById("func").innerHTML=typeof function(){};
+    document.getElementById("constr").innerHTML=(3.5).constructor;
+
+    
+    
+    </script>
+</body>
+</html>
