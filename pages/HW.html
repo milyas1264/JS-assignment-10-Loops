@@ -60,7 +60,45 @@ do{
     x++;
     
 }while(x <= 10);
+
+let multiplesOfThree = [];
+for(let i = 1; i <= 30; i++){
+    if(i %3 == 0){
+        console.log(i);
+        multiplesOfThree.push(i);
+    }
+}
+    let sum = 0;
+    for(let i = 1; i <= 30; i++){
+        if(i %3 == 0){
+            sum += i;
+        }
+    }
+
+    //Q4: 1 se 3 tak ke pin  numbers user se lena
+    let correctPin = "123";
+let attempts = 3;
+
+while (attempts > 0) {
+  let userPin = prompt("Enter your pin:");
+  
+  if (userPin === correctPin) {
+    console.log(" Correct PIN. Access granted.");
+    break;
+  } else {
+    attempts--;
+    if (attempts > 0) {
+      console.log(` Incorrect PIN. You have ${attempts} attempt(s) left.`);
+    } else {
+      console.log(" Incorrect PIN. Your PIN is blocked.");
+    }
+  }
+}
+
     
+    
+    
+
    </script>
 
 </body>
